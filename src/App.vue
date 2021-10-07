@@ -1,10 +1,14 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Converter</router-link> |
+    <router-link to="/portfolio">Portfolio</router-link>
   </div>
-  <router-view/>
+  <router-view />
 </template>
+
+<script>
+export default {};
+</script>
 
 <style lang="scss">
 #app {
@@ -12,7 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: $secondary-color;
 }
 
 #nav {
@@ -20,11 +24,37 @@
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: $secondary-color;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: $primary-color;
     }
+  }
+}
+
+.app-block {
+  background: #fff;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.equals {
+  width: 53px;
+  height: 53px;
+  background: $primary-color;
+  color: white;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .app-block {
+    margin-top: 1rem;
   }
 }
 </style>

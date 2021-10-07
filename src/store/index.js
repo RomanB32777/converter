@@ -1,12 +1,10 @@
 import { createStore } from 'vuex'
+import { converterModule } from "@/store/converterModule";
+import { portfolioModule } from "@/store/portfolioModule";
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    converter: converterModule,
+    portfolio: portfolioModule
   }
 })
