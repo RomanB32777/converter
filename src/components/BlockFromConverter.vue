@@ -1,7 +1,7 @@
 <template>
   <div class="input-group">
-    <my-select :disabled="loading" v-model="currencyFromBlock.select" :options="options" />
-    <my-number-input :disabled="loading" v-model="currencyFromBlock.number" />
+    <my-select v-model="currencyFromBlock.select" :options="options" />
+    <my-number-input  v-model="currencyFromBlock.number" />
   </div>
 </template>
 
